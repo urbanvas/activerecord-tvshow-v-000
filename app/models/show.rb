@@ -21,7 +21,7 @@ class Show < ActiveRecord::Base
   end
 
   def self.popular_shows
-    a = Show.find_by :rating > 5
+    a = Show.find_by :rating
   end
 
   def self.shows_by_alphabetical_order
